@@ -1,0 +1,1 @@
+# hackintosh-dell-5530

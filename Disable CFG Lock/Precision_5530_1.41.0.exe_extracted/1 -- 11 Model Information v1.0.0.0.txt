@@ -1,5 +1,0 @@
-VendorName=Dell Inc.
-OemString=Model_File
-SystemName=XPS 15 9570/Precision 5530
-Version=1.41.0
-Model=087C,087D

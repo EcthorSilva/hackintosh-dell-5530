@@ -1,5 +1,7 @@
 # hackintosh-dell-5530
 
+![Sem Título](https://github.com/user-attachments/assets/b0bef0fe-5b34-46e2-8ffb-aad4f85f6d49)
+
 ### Hardware details
 
 - CPU: Intel Core i9-8950HK (6 núcleos, 2.9GHz base, 4.8GHz Turbo, 12MB Cache, 45W)

@@ -14,7 +14,7 @@
 |Wi-Fi / Bluetooth|Intel Wireless-AC 9260|
 |Touchpad|Synaptics|
 |Placa-mãe / Modelo do Laptop|Dell Precision 5530 (Chipset CM246)|
-|NVME|null|
+|NVME|KXG5AZNV512G NVMe SED TOSHIBA 512GB|
 
 ### Compatibility Check
 

@@ -48,3 +48,12 @@ Algumas teclas do teclado como insert ou print screen estão bugadas, não respo
 
 Nota: Por algum motivo atualizei os arquivos de opencore e tudo ficou quebrado, tive que retornar a uma EFI antiga que não esta usando o Wi-Fi nativo e sim pelo HeliPort.
 A ideia é ir usando o hackintosh, programando e corrigindo os pequenos bugs até conseguir comprar uma placa Wi-Fi nativa ou uma broadcom suportada (como a entrada do network card desse notebook é uma Key A as minhas opções de placas ficam um pouco restritas tendo que encarar outras soluções como adaptadores. Ainda estou maturando essa ideia.)
+
+### Benchmark 
+
+Comparação feita com um Dell Precision 5530 com Windows 11 Pro, versão que anteriormente estava instalada em meu notebook, e com a mesma configuração que esta maquina tem.
+
+<img width="1914" alt="image" src="https://github.com/user-attachments/assets/e190053f-d129-4c18-949c-83c22d15c5f1" />
+
+Meu benchmark: https://browser.geekbench.com/v6/cpu/10457910  
+Outro benchmark: https://browser.geekbench.com/v6/cpu/10408128

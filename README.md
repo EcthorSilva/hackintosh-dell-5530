@@ -38,6 +38,14 @@
 7. SD Controller:
    - Realtek PCIE CardReader: Up to macOS Sequoia 15
 
+### BIOS Config:
+
+Secure boot -> disable  
+Intel SGX (software guard extensions) -> disable  
+TPM 2.0 -> disable  
+Thunderbolt -> disable  
+Sata operation -> AHCI  
+
 ### Bugs: 
 
 Ao bloquear a tela e esperar uns minutos o macOS coloca a tela em suspensão e ao voltar ela fica com a imagem quebrada, ainda estou investigando isso;  

@@ -9,7 +9,7 @@
         "Release Date": "2024-12-11",
         "System Type": "x64-based",
         "Firmware Type": "UEFI",
-        "Secure Boot": "Enabled"
+        "Secure Boot": "Disabled"
     },
     "CPU": {
         "Manufacturer": "Intel",
@@ -46,6 +46,11 @@
             "Connector Type": "Internal",
             "Resolution": "3840x2160",
             "Connected GPU": "Intel(R) UHD Graphics 630"
+        },
+        "25UM58G": {
+            "Connector Type": "HDMI",
+            "Resolution": "2560x1080",
+            "Connected GPU": "Intel(R) UHD Graphics 630"
         }
     },
     "Network": {
@@ -62,6 +67,9 @@
             "Bus Type": "INTELAUDIO",
             "Device ID": "8086-280B",
             "Subsystem ID": "80860101",
+            "Audio Endpoints": [
+                "25UM58G"
+            ],
             "Controller Device ID": "8086-A348"
         },
         "Realtek(R) Audio": {
@@ -149,11 +157,6 @@
         }
     },
     "System Devices": {
-        "Intel(R) Software Guard Extensions Device": {
-            "Bus Type": "ACPI",
-            "Device": "INT0E0C",
-            "ACPI Path": "\\_SB.EPC_"
-        },
         "Recursos da placa-m\u00e3e": {
             "Bus Type": "ACPI",
             "Device": "PNP0C02",

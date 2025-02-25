@@ -46,22 +46,27 @@ TPM 2.0 -> disable
 Thunderbolt -> disable  
 Sata operation -> AHCI  
 
-### Bugs: 
+### Comandos para Post Install
 
-Ao bloquear a tela e esperar uns minutos o macOS coloca a tela em suspensão e ao voltar ela fica com a imagem quebrada, ainda estou investigando isso;  
-A saida HDMI não esta funcionando, mas eu não tentei configurar ela ainda;  
-Algumas teclas do teclado como insert ou print screen estão bugadas, não respondem ou responde enviam comandos diferentes do normal (exemplo: a tecla F11 com o FN ligado abaixa o brilho, mas com ele desligado ela mostra a area de trabalho).
+sudo pmset -a hibernatemode 0
+sudo rm -f /var/vm/sleepimage
+sudo mkdir /var/vm/sleepimage
+sudo pmset -a standby 0
+sudo pmset -a autopoweroff 0
+sudo pmset -a powernap 0
+sudo pmset -a proximitywake 0
+sudo pmset -b tcpkeepalive 0 (optional)
+
+### Updates
+
+- Fiz um downgrade para a versão 14 Sonoma por ter mais compatibilidade com kexts de hackintosh;
+- Corrigido o bug que deixava a tela dividida em 4 partes após despertar;
+- Corrigido também a porta HDMI que não estava funcionando;
+- Novo bug descoberto - Agora é possivel transmitir a tela usando uma dock dell, mas após isso o displey integrado fica sem imagem. (Acredito que seja algo relacionado a saida DP já que nos testes que fiz a saida de video via USB era reconhecida como DP).
+
+> *Nota:* o bug da tela parou após atualizar o dpcd-max-link-rate de CgAAAA== para FAAAAA== e mandar os comandos de post-install, depois testarei para ver qual foi o responsável por corrigir o erro
 
 #### Notas:
 
 Nota: Por algum motivo atualizei os arquivos de opencore e tudo ficou quebrado, tive que retornar a uma EFI antiga que não esta usando o Wi-Fi nativo e sim pelo HeliPort.
 A ideia é ir usando o hackintosh, programando e corrigindo os pequenos bugs até conseguir comprar uma placa Wi-Fi nativa ou uma broadcom suportada (como a entrada do network card desse notebook é uma Key A as minhas opções de placas ficam um pouco restritas tendo que encarar outras soluções como adaptadores. Ainda estou maturando essa ideia.)
-
-### Benchmark 
-
-Comparação feita com um Dell Precision 5530 com Windows 11 Pro, versão que anteriormente estava instalada em meu notebook, e com a mesma configuração que esta maquina tem.
-
-<img width="1914" alt="image" src="https://github.com/user-attachments/assets/e190053f-d129-4c18-949c-83c22d15c5f1" />
-
-Meu benchmark: https://browser.geekbench.com/v6/cpu/10457910  
-Outro benchmark: https://browser.geekbench.com/v6/cpu/10408128

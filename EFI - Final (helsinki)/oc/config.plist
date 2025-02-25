@@ -267,13 +267,13 @@
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
                     <key>AAPL,ig-platform-id</key>
-                    <data>CQClPg==</data>
+                    <data>AACbPg==</data>
                     <key>agdpmod</key>
                     <string>vit9696</string>
                     <key>disable-external-gpu</key>
                     <data>AQAAAA==</data>
                     <key>dpcd-max-link-rate</key>
-                    <data>CgAAAA==</data>
+                    <data>FAAAAA==</data>
                     <key>enable-backlight-registers-fix</key>
                     <data>AQAAAA==</data>
                     <key>enable-dpcd-max-link-rate-fix</key>
@@ -1264,7 +1264,7 @@
                     <key>bluetoothInternalControllerInfo</key>
                     <data>AAAAAAAAAAAAAAAAAAA=</data>
                     <key>boot-args</key>
-                    <string>-v keepsyms=1 -wegnoegpu -igfxblr igfxfw=2 igfxrpsc=1 -igfxblt brcmfx-country=#a brcmfx-aspm</string>
+                    <string>-v keepsyms=1 -wegnoegpu igfxonln=1 -igfxblr igfxrpsc=1 -igfxblt brcmfx-country=#a brcmfx-aspm</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>

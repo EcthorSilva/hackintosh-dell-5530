@@ -267,7 +267,7 @@
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
                     <key>AAPL,ig-platform-id</key>
-                    <data>CQClPg==</data>
+                    <data>AACbPg==</data>
                     <key>agdpmod</key>
                     <string>vit9696</string>
                     <key>disable-external-gpu</key>
@@ -1215,6 +1215,28 @@
                     <key>TextMode</key>
                     <false/>
                 </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Auxiliary</key>
+                    <true/>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Flavour</key>
+                    <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <true/>
+                    <key>Name</key>
+                    <string>CleanNvram</string>
+                    <key>Path</key>
+                    <string>CleanNvram.efi</string>
+                    <key>RealPath</key>
+                    <true/>
+                    <key>TextMode</key>
+                    <true/>
+                </dict>
             </array>
         </dict>
         <key>NVRAM</key>
@@ -1242,7 +1264,7 @@
                     <key>bluetoothInternalControllerInfo</key>
                     <data>AAAAAAAAAAAAAAAAAAA=</data>
                     <key>boot-args</key>
-                    <string>-v keepsyms=1 -wegnoegpu -igfxblr igfxfw=2 igfxrpsc=1 -igfxblt brcmfx-country=#a brcmfx-aspm</string>
+                    <string>-v keepsyms=1 -wegnoegpu igfxonln=1 -igfxblr igfxrpsc=1 -igfxblt brcmfx-country=#a brcmfx-aspm</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>

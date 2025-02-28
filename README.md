@@ -48,25 +48,20 @@ Sata operation -> AHCI
 
 ### Comandos para Post Install
 
-sudo pmset -a hibernatemode 0
-sudo rm -f /var/vm/sleepimage
-sudo mkdir /var/vm/sleepimage
-sudo pmset -a standby 0
-sudo pmset -a autopoweroff 0
-sudo pmset -a powernap 0
-sudo pmset -a proximitywake 0
-sudo pmset -b tcpkeepalive 0 (optional)
+sudo pmset -a hibernatemode 0  
+sudo rm -f /var/vm/sleepimage  
+sudo mkdir /var/vm/sleepimage  
+sudo pmset -a standby 0  
+sudo pmset -a autopoweroff 0  
+sudo pmset -a powernap 0  
+sudo pmset -a proximitywake 0  
+sudo pmset -b tcpkeepalive 0 (optional)  
 
 ### Updates
 
-- Fiz um downgrade para a versão 14 Sonoma por ter mais compatibilidade com kexts de hackintosh;
-- Corrigido o bug que deixava a tela dividida em 4 partes após despertar;
-- Corrigido também a porta HDMI que não estava funcionando;
-- Novo bug descoberto - Agora é possivel transmitir a tela usando uma dock dell, mas após isso o displey integrado fica sem imagem. (Acredito que seja algo relacionado a saida DP já que nos testes que fiz a saida de video via USB era reconhecida como DP).
+- Bluetooth esta funcional;  
+- Wi-Fi funcionando de forma nativa através do (AirportItlwm.kext);  
+- Sem bug na tela após sair do modo sleep (Resolvou após mudar o dpcd-max-link-rate de CgAAAA== para FAAAAA==). 
 
-> *Nota:* o bug da tela parou após atualizar o dpcd-max-link-rate de CgAAAA== para FAAAAA== e mandar os comandos de post-install, depois testarei para ver qual foi o responsável por corrigir o erro
 
-#### Notas:
-
-Nota: Por algum motivo atualizei os arquivos de opencore e tudo ficou quebrado, tive que retornar a uma EFI antiga que não esta usando o Wi-Fi nativo e sim pelo HeliPort.
-A ideia é ir usando o hackintosh, programando e corrigindo os pequenos bugs até conseguir comprar uma placa Wi-Fi nativa ou uma broadcom suportada (como a entrada do network card desse notebook é uma Key A as minhas opções de placas ficam um pouco restritas tendo que encarar outras soluções como adaptadores. Ainda estou maturando essa ideia.)
+> *Nota:* Percebi que após sair do modo sleep todos os USBs são desconectados, por esse motivo o Bluetooth pode parar de funcionar por alguns minutos, mas volta, se não voltar é só conectar um USB que ele retorna. 

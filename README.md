@@ -2,7 +2,12 @@
 
 ![Sem Título](https://github.com/user-attachments/assets/b0bef0fe-5b34-46e2-8ffb-aad4f85f6d49)
 
-### Hardware details
+## EFI Details
+**Latest working macOS:** 14.7.1 (parcialmente funcionando no Sequoia)  
+**Current OpenCore:** 1.0.3  
+**Release date:** 01/2025  
+
+## Hardware details
 
 |Item|Description|
 |-|:-------|
@@ -38,7 +43,7 @@
 7. SD Controller:
    - Realtek PCIE CardReader: Up to macOS Sequoia 15
 
-### BIOS Config:
+## BIOS Config:
 
 Secure boot -> disable  
 Intel SGX (software guard extensions) -> disable  
@@ -46,7 +51,7 @@ TPM 2.0 -> disable
 Thunderbolt -> disable  
 Sata operation -> AHCI  
 
-### Comandos para Post Install
+## Comandos para Post Install
 
 sudo pmset -a hibernatemode 0  
 sudo rm -f /var/vm/sleepimage  
@@ -57,11 +62,22 @@ sudo pmset -a powernap 0
 sudo pmset -a proximitywake 0  
 sudo pmset -b tcpkeepalive 0 (optional)  
 
-### Updates
+## Working
 
-- Bluetooth esta funcional;  
-- Wi-Fi funcionando de forma nativa através do (AirportItlwm.kext);  
-- Sem bug na tela após sair do modo sleep (Resolvou após mudar o dpcd-max-link-rate de CgAAAA== para FAAAAA==). 
+- Wi-Fi/Bluetooth;
+- Audio e Microfone;
+- Todas as portas USB;
+- Webcam;
+- UHD Graphics 630 (2048MB);
+- Leitor de cartão SD/SDHC;
+- TouchScreen;
+- Gestos do trackpad.
+
+## Don't Working
+
+- Nvidia P2000;
+- Goodix Fingerprint;
+- Bluetooth Low Energy (BLE).
 
 
 > *Nota:* Percebi que após sair do modo sleep todos os USBs são desconectados, por esse motivo o Bluetooth pode parar de funcionar por alguns minutos, mas volta, se não voltar é só conectar um USB que ele retorna. 
